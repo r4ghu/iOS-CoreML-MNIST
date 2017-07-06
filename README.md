@@ -16,7 +16,7 @@ To use this app, open **iOS-CoreML-MNIST.xcodeproj** in Xcode 9 and run it on a 
 
 ## Training
 
-If you want to train the app, follow the tutorial given below to create an anaconda environment. Enter the environment and run the following commands in terminal with `./nnet` as master directory.
+If you want to train your own custom model, follow the tutorial given below to create an anaconda environment. Enter the environment and run the following commands in terminal with `./nnet` as master directory.
 
 ```
 (coreml) $ python train.py
