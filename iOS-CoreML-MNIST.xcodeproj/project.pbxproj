@@ -13,8 +13,7 @@
 		A8363E521EF337AE00204285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8363E511EF337AE00204285 /* Assets.xcassets */; };
 		A8363E551EF337AE00204285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8363E531EF337AE00204285 /* LaunchScreen.storyboard */; };
 		A8363E5F1EF33C9C00204285 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8363E5E1EF33C9C00204285 /* DrawView.swift */; };
-		A8363E611EF3645800204285 /* mnistCNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A8363E601EF3645400204285 /* mnistCNN.mlmodel */; };
-		A8363E651EF364D500204285 /* ImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = A8363E641EF364D500204285 /* ImageConverter.m */; };
+		A8364BAC1F0DDA1B00F338FF /* mnistCNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A8364BAB1F0DDA0E00F338FF /* mnistCNN.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +25,7 @@
 		A8363E541EF337AE00204285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8363E561EF337AE00204285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8363E5E1EF33C9C00204285 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
-		A8363E601EF3645400204285 /* mnistCNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mnistCNN.mlmodel; sourceTree = "<group>"; };
-		A8363E621EF364D400204285 /* iOS-CoreML-MNIST-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-CoreML-MNIST-Bridging-Header.h"; sourceTree = "<group>"; };
-		A8363E631EF364D500204285 /* ImageConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageConverter.h; sourceTree = "<group>"; };
-		A8363E641EF364D500204285 /* ImageConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageConverter.m; sourceTree = "<group>"; };
+		A8364BAB1F0DDA0E00F338FF /* mnistCNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mnistCNN.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +58,7 @@
 		A8363E491EF337AE00204285 /* iOS-CoreML-MNIST */ = {
 			isa = PBXGroup;
 			children = (
-				A8363E601EF3645400204285 /* mnistCNN.mlmodel */,
+				A8364BAB1F0DDA0E00F338FF /* mnistCNN.mlmodel */,
 				A8363E4A1EF337AE00204285 /* AppDelegate.swift */,
 				A8363E4C1EF337AE00204285 /* ViewController.swift */,
 				A8363E4E1EF337AE00204285 /* Main.storyboard */,
@@ -70,9 +66,6 @@
 				A8363E531EF337AE00204285 /* LaunchScreen.storyboard */,
 				A8363E561EF337AE00204285 /* Info.plist */,
 				A8363E5E1EF33C9C00204285 /* DrawView.swift */,
-				A8363E631EF364D500204285 /* ImageConverter.h */,
-				A8363E641EF364D500204285 /* ImageConverter.m */,
-				A8363E621EF364D400204285 /* iOS-CoreML-MNIST-Bridging-Header.h */,
 			);
 			path = "iOS-CoreML-MNIST";
 			sourceTree = "<group>";
@@ -149,11 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8364BAC1F0DDA1B00F338FF /* mnistCNN.mlmodel in Sources */,
 				A8363E4D1EF337AE00204285 /* ViewController.swift in Sources */,
 				A8363E5F1EF33C9C00204285 /* DrawView.swift in Sources */,
-				A8363E611EF3645800204285 /* mnistCNN.mlmodel in Sources */,
 				A8363E4B1EF337AE00204285 /* AppDelegate.swift in Sources */,
-				A8363E651EF364D500204285 /* ImageConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sri.iOS.iOS-CoreML-MNIST";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOS-CoreML-MNIST/iOS-CoreML-MNIST-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sri.iOS.iOS-CoreML-MNIST";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOS-CoreML-MNIST/iOS-CoreML-MNIST-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,6 +326,7 @@
 				A8363E5B1EF337AE00204285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
