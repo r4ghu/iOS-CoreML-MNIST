@@ -6,13 +6,13 @@ The app fetches image from your hand writing and perform number recognition in r
 
 ## Requirements
 
-- Xcode 9 
-- iOS 11
-- For training: Python 2.7 (Keras 2.0.4, TensorFlow 1.1, CoreMLTools 0.4.0)
+- Xcode 10.0 beta
+- iOS 12
+- For training: Python 3.6 (Keras 2.1.6, TensorFlow 1.5.0, CoreMLTools 2.0b1)
 
 ## Usage
 
-To use this app, open **iOS-CoreML-MNIST.xcodeproj** in Xcode 9 and run it on a device with iOS 11. (You can also use simulator)
+To use this app, open **iOS-CoreML-MNIST.xcodeproj** in Xcode 10 and run it on a device with iOS 12. (You can also use simulator)
 
 ## Training
 
@@ -20,7 +20,7 @@ If you want to train your own custom model, follow the tutorial given below to c
 
 ```
 (coreml) $ python train.py
-(coreml) $ sudo python convert.py
+(coreml) $ python convert.py
 ```
 
 I also included a jupyter notebook for better understanding the above code. You need to use it with root permissions for mainly converting the keras model to CoreML model. Initialise the jupyter notebook instance with the following command:
