@@ -46,7 +46,7 @@ model.add(Dense(num_classes, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Training
-model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=10, batch_size=200, verbose=2)
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=20, batch_size=200, verbose=2)
 
 # Prepare model for inference
 for k in model.layers:
@@ -54,7 +54,7 @@ for k in model.layers:
         model.layers.remove(k)
 
 # Print model summary
-print model.summary()
+print(model.summary())
 
 # Save the model
 model.save('mnistCNN.h5')
