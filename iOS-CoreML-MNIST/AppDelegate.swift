@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  iOS-CoreML-MNIST
 //
-//  Created by Sri Raghu Malireddi on 15/06/17.
-//  Copyright © 2017 Sri Raghu Malireddi. All rights reserved.
+//  Created by Sri Raghu Malireddi on 02/08/18.
+//  Copyright © 2018 Sri Raghu Malireddi. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

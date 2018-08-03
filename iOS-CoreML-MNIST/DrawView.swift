@@ -6,7 +6,7 @@
 //  Copyright © 2017 Sri Raghu Malireddi. All rights reserved.
 //
 
-// Code taken with inspiration from Apple's Metal-2 sample MPSCNNHelloWorld
+// CREDITS: Code taken with inspiration from Apple's Metal-2 sample MPSCNNHelloWorld
 import UIKit
 
 /**
@@ -92,4 +92,5 @@ class Line{
         self.end   = end
     }
 }
+
 
