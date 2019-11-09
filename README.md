@@ -8,8 +8,8 @@ The app fetches image from your hand writing and perform number recognition in r
 
 ## Requirements
 
-- Xcode 10.0 beta
-- iOS 12
+- Xcode 11.2
+- iOS 13.2
 - For training: Python 3.6 (Keras 2.1.6, TensorFlow 1.5.0, CoreMLTools 2.0b1)
 
 ## Usage
