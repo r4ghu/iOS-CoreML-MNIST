@@ -40,6 +40,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tappedDetect(_ sender: Any) {
+        // Check if user has drawn anything
+        if drawView.lines.count <= 0 {
+            // User didn't draw anything, return
+            return
+        }
         // Fancy Image conversions
         let viewContext = drawView.getViewContext()
         let cgImage = viewContext?.makeImage()
