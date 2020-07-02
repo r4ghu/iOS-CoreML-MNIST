@@ -8,13 +8,13 @@ The app fetches image from your hand writing and perform number recognition in r
 
 ## Requirements
 
-- Xcode 11.2
-- iOS 13.2
+- Xcode 12.0
+- iOS 14.0
 - For training: Python 3.6 (Keras 2.1.6, TensorFlow 1.5.0, CoreMLTools 2.0b1)
 
 ## Usage
 
-To use this app, open **iOS-CoreML-MNIST.xcodeproj** in Xcode 10 and run it on a device with iOS 12. (You can also use simulator)
+To use this app, open **iOS-CoreML-MNIST.xcodeproj** in Xcode 12 and run it on a device with iOS 14. (You can also use simulator)
 
 ## Training
 
